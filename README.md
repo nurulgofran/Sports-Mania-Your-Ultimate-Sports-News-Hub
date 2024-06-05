@@ -1,6 +1,3 @@
-Sure! Here's a README template for your GitHub project "Sports Mania":
-
----
 
 # Sports Mania
 
