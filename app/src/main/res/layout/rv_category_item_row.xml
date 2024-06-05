@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/tools"
+    app:ignore="NamespaceTypo">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:clickable="true"
+        android:elevation="@dimen/_3sdp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4sp"
+        app:cardUseCompatPadding="true"
+        app:cardPreventCornerOverlap="false"
+        android:foreground="?attr/selectableItemBackground"
+        card_view:cardCornerRadius="0dp">
+
+        <RelativeLayout
+            android:background="?attr/colorCardView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp">
+
+            <ImageView
+                android:id="@+id/iv_category"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_115sdp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_category_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_category"
+                android:lines="1"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:textColor="?attr/colorPrimaryText"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_category_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_category_title"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:gravity="right"
+                android:paddingBottom="@dimen/_10sdp"
+                android:textColor="?attr/colorSecondaryText"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

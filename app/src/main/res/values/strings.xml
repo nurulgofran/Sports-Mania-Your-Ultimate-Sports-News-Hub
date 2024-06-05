@@ -1,0 +1,72 @@
+<resources>
+
+    <string name="admob_ad_id">ca-app-pub-4007613038027690~8670308420</string>
+    <string name="admob_banner">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_fullscreen_interstitial">ca-app-pub-3940256099942544/1033173712</string>
+
+    <string name="app_name">Sport Mania</string>
+    <string name="title_home">Home</string>
+    <string name="title_category">Categories</string>
+    <string name="title_video">Video</string>
+    <string name="title_favorite">Favorites</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_login">Login</string>
+    <string name="title_register">Register</string>
+    <string name="title_about">About</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activiy_news_detail">News Details...</string>
+    <string name="search">Search</string>
+    <string name="search_here">Search..</string>
+    <string name="timeout_error">Timeout..</string>
+    <string name="hint_email">Email</string>
+    <string name="settings_saved">Settings saved..</string>
+    <string name="succesfull">Succesfull...</string>
+    <string name="error">Error...</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="you_hava_rated">You have rated..</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Fullname</string>
+    <string name="not_login_favorite_message">You can access your favorites by logging in at any time..</string>
+    <string name="please_fill_the_fields">Please fill the credentials!</string>
+    <string name="please_fill_credentials">Please enter the credentials!</string>
+    <string name="you_must_sign_to_favorites">You must sign in to add to your favorites</string>
+    <string name="valid_email_adres">Please enter a valid email address!</string>
+    <string name="latest_news">Latest News</string>
+    <string name="category_name">Category Name</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="terms_conditions">Terms and Conditions of Use</string>
+    <string name="title_terms">Terms and Conditions of Use</string>
+    <string name="saving">Saving...</string>
+    <string name="you_must_accept_terms">You must accept the terms of uses!</string>
+    <string name="username_cannot_be_less">Username cannot be less than 6 characters!</string>
+    <string name="query_cannot_be_less">Query cannot be less than 6 characters!</string>
+    <string name="password_cannot_be_less">Password cannot be less than 6 characters!</string>
+    <string name="logging_in">Logging in ...</string>
+    <string name="updating">Updating...</string>
+    <string name="app_description">App Description</string>
+    <string name="app_website">App Website</string>
+    <string name="app_email">App Email</string>
+    <string name="app_name_about">App Name</string>
+    <string name="categori_title">Categori Title</string>
+    <string name="date">Date</string>
+    <string name="title">Title</string>
+    <string name="internet_error">Internet error..</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enable_dark_mode">Enable Dark Mode</string>
+    <string name="night_mode">Night Mode</string>
+    <string name="enable_cardview_layout">Enable Cardview Layout</string>
+    <string name="cardview_layout">Cardview Layout</string>
+    <string name="enable_saving_data">Enable Saving Data</string>
+    <string name="saving_data">Saving Data</string>
+    <string name="terms_and_conditions_of_use">Terms and Conditions of Use</string>
+
+</resources>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimaryLight"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    tools:context="com.nurul.sportmania.Fragments.AboutFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimaryLight"
+        android:paddingBottom="@dimen/_16sdp">>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_14sdp"
+            android:background="?attr/colorPrimaryLight"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="@dimen/_7sdp"
+                    android:background="?attr/colorCardView"
+                    app:cardPreventCornerOverlap="false">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?attr/colorCardView"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_10sdp">
+
+                        <TextView
+                            android:id="@+id/app_name_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/app_name_about"
+                            android:textColor="?attr/colorPrimaryText"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/app_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="?attr/colorSecondaryText"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_7sdp"
+                    android:background="?attr/colorCardView"
+                    app:cardPreventCornerOverlap="false">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?attr/colorCardView"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_10sdp">
+
+                        <TextView
+                            android:id="@+id/app_website_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/app_website"
+                            android:textColor="?attr/colorPrimaryText"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/app_website"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="?attr/colorSecondaryText"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="@dimen/_7sdp"
+                    android:background="?attr/colorCardView"
+                    app:cardPreventCornerOverlap="false">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?attr/colorCardView"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_10sdp">
+
+                        <TextView
+                            android:id="@+id/app_email_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/app_email"
+                            android:textColor="?attr/colorPrimaryText"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/app_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="?attr/colorSecondaryText"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_14sdp"
+                android:background="?attr/colorCardView"
+                app:cardPreventCornerOverlap="false">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/colorCardView"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp">
+
+                    <TextView
+                        android:id="@+id/wb_description_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_description"
+                        android:textColor="?attr/colorPrimaryText"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
+
+                    <WebView
+                        android:id="@+id/wb_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

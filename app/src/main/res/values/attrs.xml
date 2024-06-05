@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ds">
+        <attr name="colorPrimary" format="color"></attr>
+        <attr name="colorPrimaryDark" format="color"></attr>
+        <attr name="colorPrimaryLight" format="color"></attr>
+        <attr name="colorAccent" format="color"></attr>
+        <attr name="colorDivider" format="color"></attr>
+        <attr name="colorPrimaryText" format="color"></attr>
+        <attr name="colorSecondaryText" format="color"></attr>
+        <attr name="colorWhite" format="color"></attr>
+        <attr name="colorCardView" format="color"></attr>
+        <attr name="colorEditTextBg" format="color"></attr>
+        <attr name="colorDetailtBg" format="color"></attr>
+    </declare-styleable>
+</resources>

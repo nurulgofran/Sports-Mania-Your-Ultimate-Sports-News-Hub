@@ -1,0 +1,34 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimaryLight"
+    tools:context="com.nurul.sportmania.Fragments.FavoriteFragment">
+
+    <LinearLayout
+        android:visibility="invisible"
+        android:id="@+id/ll_fav_not_lohin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/not_login_favorite_message"
+            android:textAlignment="center"
+            android:textColor="?attr/colorSecondaryText"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/card_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical" />
+
+</FrameLayout>

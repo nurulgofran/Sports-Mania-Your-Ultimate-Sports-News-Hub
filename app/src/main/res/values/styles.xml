@@ -1,0 +1,59 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppThemeLight" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/light_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/light_colorPrimaryDark</item>
+        <item name="colorPrimaryLight">@color/light_colorPrimaryLight</item>
+        <item name="colorAccent">@color/light_colorAccent</item>
+        <item name="colorDivider">@color/light_colorDivider</item>
+        <item name="colorPrimaryText">@color/light_colorPrimaryText</item>
+        <item name="colorSecondaryText">@color/light_colorSecondaryText</item>
+        <item name="colorWhite">@color/colorWhite</item>
+        <item name="colorCardView">@color/light_colorCardView</item>
+        <item name="colorEditTextBg">@color/light_colorEditTextBg</item>
+        <item name="colorDetailtBg">@color/light_colorDetailtBg</item>
+        <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
+    </style>
+    
+    <!-- Base application theme. -->
+    <style name="AppThemeNight" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/dark_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/dark_colorPrimaryDark</item>
+        <item name="colorPrimaryLight">@color/dark_colorPrimaryLight</item>
+        <item name="colorAccent">@color/dark_colorAccent</item>
+        <item name="colorDivider">@color/dark_colorDivider</item>
+        <item name="colorPrimaryText">@color/dark_colorPrimaryText</item>
+        <item name="colorSecondaryText">@color/dark_colorSecondaryText</item>
+        <item name="colorWhite">@color/colorWhite</item>
+        <item name="colorCardView">@color/dark_colorCardView</item>
+        <item name="colorEditTextBg">@color/dark_colorEditTextBg</item>
+        <item name="colorDetailtBg">@color/dark_colorDetailtBg</item>
+        <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
+    </style>
+
+    <style name="WindowAnimationTransition">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="AppThemeLight.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="AppThemeNight.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppThemeLight.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppThemeNight.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppThemeNight.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppThemeLight.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

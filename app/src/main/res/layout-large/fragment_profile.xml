@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimaryLight"
+    tools:context="com.nurul.sportmania.Fragments.ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PROFİLE"
+        android:visibility="invisible" />
+    <EditText
+        android:id="@+id/et_reg_password"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/colorEditTextBg"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:padding="@dimen/_10sdp"
+        android:singleLine="true"
+        android:textColor="?attr/colorPrimaryText"
+        android:textColorHint="?attr/colorSecondaryText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_reg_email" />
+
+    <EditText
+        android:id="@+id/et_reg_name"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="104dp"
+        android:background="?attr/colorEditTextBg"
+        android:hint="@string/hint_name"
+        android:inputType="textCapWords"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="?attr/colorPrimaryText"
+        android:textColorHint="?attr/colorSecondaryText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_reg_email"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/colorPrimaryDark"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="?attr/colorWhite"
+        android:textColorHint="?attr/colorWhite"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_reg_name" />
+
+    <Button
+        android:id="@+id/btnUpdateProfile"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/colorAccent"
+        android:text="@string/update_profile"
+        android:textColor="?attr/colorWhite"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_reg_password" />
+
+    <Button
+        android:id="@+id/btnLogOut"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="72dp"
+        android:background="@null"
+        android:text="@string/btn_logout"
+        android:textAllCaps="false"
+        android:textColor="?attr/colorPrimaryText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+        app:layout_constraintTop_toBottomOf="@+id/btnUpdateProfile"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>
+
