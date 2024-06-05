@@ -2,7 +2,7 @@
 # Sports Mania
 
 
-**Sports Mania** is an online news portal dedicated to providing the latest updates, scores, and news in the world of sports. Stay informed about your favorite teams, players, and sports events with our comprehensive and real-time news coverage.
+**Sports Mania** is an online news portal dedicated to providing the latest updates, scores, and news in the world of sports. Stay informed about your favorite teams, players, and sports events with our comprehensive and real-time news coverage. As my Bachelor final year project, we made the application.
 
 ## Table of Contents
 
