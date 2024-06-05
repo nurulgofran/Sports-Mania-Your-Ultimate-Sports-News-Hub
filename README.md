@@ -1,7 +1,6 @@
 
 # Sports Mania
 
-![Sports Mania Logo](link-to-your-logo-image)
 
 **Sports Mania** is an online news portal dedicated to providing the latest updates, scores, and news in the world of sports. Stay informed about your favorite teams, players, and sports events with our comprehensive and real-time news coverage.
 
@@ -28,7 +27,7 @@ To run this project locally, follow these steps:
 1. **Clone the repository:**
 
     ```sh
-    git clone https://github.com/your-username/sports-mania.git
+    git clone https://github.com/nurulgofran/sports-mania.git
     ```
 
 2. **Navigate to the project directory:**
@@ -106,10 +105,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For any questions or suggestions, please feel free to reach out:
 
-- **Email:** support@sportsmania.com
-- **Twitter:** [@SportsMania](https://twitter.com/SportsMania)
-- **Facebook:** [Sports Mania](https://facebook.com/SportsMania)
+- **Email:** nurulgofran@gmail.com
 
----
-
-Feel free to customize this template to better suit your project's specifics and requirements.
