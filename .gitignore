@@ -1,0 +1,61 @@
+# IntelliJ IDEA / Android Studio
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Gradle
+.gradle/
+build/
+local.properties
+
+# Android build
+*.apk
+*.ap_
+*.aab
+
+# Signing
+*.jks
+*.keystore
+keystore.properties
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*~
+*.bak
+*.backup
+
+# IDE
+.vscode/
+*.swp
+*.swo
+
+# Generated
+gen/
+out/
+bin/
+
+# Testing tools
+.testsprite/
+
+# AI assistant configs
+.claude/
+.agents/
+.agent/
+.gemini/
+
+# Environment files
+.env
+.env.*
+!.env.example
