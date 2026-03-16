@@ -59,3 +59,9 @@ bin/
 .env
 .env.*
 !.env.example
+
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
