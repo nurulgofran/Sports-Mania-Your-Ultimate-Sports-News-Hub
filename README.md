@@ -1,109 +1,50 @@
-
 # Sports Mania
 
-
-**Sports Mania** is an online news portal dedicated to providing the latest updates, scores, and news in the world of sports. Stay informed about your favorite teams, players, and sports events with our comprehensive and real-time news coverage. As my Bachelor final year project, we made the application.
-
-## Table of Contents
-
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+Sports Mania is an Android sports news application built as a bachelor final-year project. This repository contains the Java Android client together with a cleanup pass focused on repository hygiene, safer local configuration, and a more professional package structure.
 
 ## Features
 
-- **Real-time News:** Get the latest sports news as it happens.
-- **Scores & Updates:** Stay updated with live scores and match updates.
-- **Comprehensive Coverage:** News and updates from various sports including football, basketball, cricket, and more.
-- **User-Friendly Interface:** Easy to navigate and read.
+- Browse the latest sports news and category feeds
+- Search articles and open detailed news pages
+- Save favorite news locally
+- Toggle dark mode and data-saving preferences
+- Load remote app settings and text labels from the backend API
 
-## Installation
+## Local Setup
 
-To run this project locally, follow these steps:
+1. Clone the repository.
+2. Copy the local config template:
 
-1. **Clone the repository:**
+```sh
+cp app-config.properties.example app-config.properties
+```
 
-    ```sh
-    git clone https://github.com/nurulgofran/sports-mania.git
-    ```
+3. Update `app-config.properties` if you want to point the app at a different backend or use your own ad / notification service IDs.
+4. Build from the terminal:
 
-2. **Navigate to the project directory:**
+```sh
+export JAVA_HOME=$(/usr/libexec/java_home -v 11)
+./gradlew assembleDebug
+```
 
-    ```sh
-    cd sports-mania
-    ```
+5. Or open the project in Android Studio and sync Gradle.
 
-3. **Install the dependencies:**
+## Project Structure
 
-    If you are using `npm`:
+- `app/src/main/java/com/nurul/sportmania/ui`: activities, fragments, adapters, and UI behaviors
+- `app/src/main/java/com/nurul/sportmania/data`: local storage, preferences, remote API access, and models
+- `app/src/main/java/com/nurul/sportmania/util`: shared utility helpers
+- `app/src/main/java/com/nurul/sportmania/ads`: ad-loading helper
+- `Docs/`: reports and presentation material from the original project
 
-    ```sh
-    npm install
-    ```
+## Configuration
 
-    Or if you are using `yarn`:
+The project reads environment-specific values from `app-config.properties`, Gradle properties, or environment variables.
 
-    ```sh
-    yarn install
-    ```
-
-4. **Start the development server:**
-
-    ```sh
-    npm start
-    ```
-
-    Or if you are using `yarn`:
-
-    ```sh
-    yarn start
-    ```
-
-    The application will be available at `http://localhost:3000`.
-
-## Usage
-
-1. Open your web browser and go to `http://localhost:3000`.
-2. Browse through the latest news articles and live scores.
-3. Use the search functionality to find news related to your favorite sports, teams, or players.
-
-## Contributing
-
-We welcome contributions from the community. To contribute to Sports Mania, follow these steps:
-
-1. **Fork the repository.**
-2. **Create a new branch:**
-
-    ```sh
-    git checkout -b feature/your-feature-name
-    ```
-
-3. **Make your changes and commit them:**
-
-    ```sh
-    git commit -m "Add your message here"
-    ```
-
-4. **Push to the branch:**
-
-    ```sh
-    git push origin feature/your-feature-name
-    ```
-
-5. **Open a pull request.**
-
-Please ensure your code adheres to our coding standards and includes relevant tests.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For any questions or suggestions, please feel free to reach out:
-
-- **Email:** nurulgofran@gmail.com
-
+- `SPORTSMANIA_BASE_URL`
+- `SPORTSMANIA_API_PATH_PREFIX`
+- `SPORTSMANIA_ADMOB_APP_ID`
+- `SPORTSMANIA_ADMOB_BANNER_ID`
+- `SPORTSMANIA_ADMOB_INTERSTITIAL_ID`
+- `SPORTSMANIA_ONESIGNAL_APP_ID`
+- `SPORTSMANIA_ONESIGNAL_GOOGLE_PROJECT_NUMBER`

@@ -1,7 +1,9 @@
 
+import java.util.Properties
+
 buildscript {
     repositories {
-        maven { url 'https://plugins.gradle.org/m2/'}
+        maven { url 'https://plugins.gradle.org/m2/' }
     }
     dependencies {
         classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:[0.11.0, 0.99.99]'
@@ -10,10 +12,30 @@ buildscript {
 apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
 
 repositories {
-    maven { url 'https://maven.google.com' }
+    google()
+    mavenCentral()
 }
 
 apply plugin: 'com.android.application'
+
+def appConfigProperties = new Properties()
+def appConfigFile = rootProject.file("app-config.properties")
+if (appConfigFile.exists()) {
+    appConfigFile.withInputStream { stream ->
+        appConfigProperties.load(stream)
+    }
+}
+
+def readConfigValue = { String key, String defaultValue ->
+    return (System.getenv(key)
+            ?: project.findProperty(key)
+            ?: appConfigProperties.getProperty(key)
+            ?: defaultValue).toString()
+}
+
+def quotedConfigValue = { String key, String defaultValue ->
+    return "\"${readConfigValue(key, defaultValue)}\""
+}
 
 android {
     compileSdkVersion 27
@@ -24,11 +46,21 @@ android {
         versionCode 3
         versionName "2.2"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        buildConfigField "String", "BASE_URL", quotedConfigValue("SPORTSMANIA_BASE_URL", "http://nurulgofran.com/")
+        buildConfigField "String", "API_PATH_PREFIX", quotedConfigValue("SPORTSMANIA_API_PATH_PREFIX", "admin/")
+        resValue "string", "admob_ad_id", readConfigValue("SPORTSMANIA_ADMOB_APP_ID", "ca-app-pub-3940256099942544~3347511713")
+        resValue "string", "admob_banner", readConfigValue("SPORTSMANIA_ADMOB_BANNER_ID", "ca-app-pub-3940256099942544/6300978111")
+        resValue "string", "admob_fullscreen_interstitial", readConfigValue("SPORTSMANIA_ADMOB_INTERSTITIAL_ID", "ca-app-pub-3940256099942544/1033173712")
         manifestPlaceholders = [
-                onesignal_app_id: 'e84bad91-992e-4838-a666-c8be21ab1930',
+                admob_app_id: readConfigValue("SPORTSMANIA_ADMOB_APP_ID", "ca-app-pub-3940256099942544~3347511713"),
+                onesignal_app_id: readConfigValue("SPORTSMANIA_ONESIGNAL_APP_ID", ""),
                 // Project number pulled from dashboard, local value is ignored.
-                onesignal_google_project_number: 'REMOTE'
+                onesignal_google_project_number: readConfigValue("SPORTSMANIA_ONESIGNAL_GOOGLE_PROJECT_NUMBER", "REMOTE")
         ]
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
     buildTypes {
         release {
@@ -44,7 +76,7 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     //noinspection GradleCompatible
     implementation 'com.android.support:support-v4:27.1.1'
-    implementation 'com.android.support:support-annotations:28.0.0'
+    implementation 'com.android.support:support-annotations:27.1.1'
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
    // testImplementation 'junit:junit:4.12'
@@ -56,11 +88,12 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
     implementation 'com.android.support:recyclerview-v7:27.1.1'
     implementation 'com.android.support:cardview-v7:27.1.1'
-    implementation 'com.squareup.picasso:picasso:2.5.2'
-    implementation 'com.jakewharton.picasso:picasso2-okhttp3-downloader:1.1.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
     implementation 'com.intuit.sdp:sdp-android:1.0.5'
-    implementation 'jp.wasabeef:picasso-transformations:2.2.1'
     implementation 'com.google.android.gms:play-services-ads:17.2.0'
     implementation 'com.onesignal:OneSignal:3.10.8'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
 

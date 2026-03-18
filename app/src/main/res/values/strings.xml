@@ -1,10 +1,6 @@
 <resources>
 
-    <string name="admob_ad_id">ca-app-pub-4007613038027690~8670308420</string>
-    <string name="admob_banner">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="admob_fullscreen_interstitial">ca-app-pub-3940256099942544/1033173712</string>
-
-    <string name="app_name">Sport Mania</string>
+    <string name="app_name">Sports Mania</string>
     <string name="title_home">Home</string>
     <string name="title_category">Categories</string>
     <string name="title_video">Video</string>
@@ -59,8 +55,6 @@
     <string name="title">Title</string>
     <string name="internet_error">Internet error..</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="enable_dark_mode">Enable Dark Mode</string>
     <string name="night_mode">Night Mode</string>
     <string name="enable_cardview_layout">Enable Cardview Layout</string>

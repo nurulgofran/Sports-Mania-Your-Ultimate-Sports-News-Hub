@@ -8,6 +8,9 @@
 .gradle/
 build/
 local.properties
+captures/
+.externalNativeBuild/
+.cxx/
 
 # Android build
 *.apk
@@ -59,6 +62,7 @@ bin/
 .env
 .env.*
 !.env.example
+app-config.properties
 
 # Dependencies
 node_modules/

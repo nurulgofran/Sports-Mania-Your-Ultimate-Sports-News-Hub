@@ -1,0 +1,11 @@
+# Copy this file to app-config.properties and customize it locally.
+# The real app-config.properties file is gitignored so environment-specific
+# service identifiers do not get committed by mistake.
+
+SPORTSMANIA_BASE_URL=http://nurulgofran.com/
+SPORTSMANIA_API_PATH_PREFIX=admin/
+SPORTSMANIA_ADMOB_APP_ID=ca-app-pub-3940256099942544~3347511713
+SPORTSMANIA_ADMOB_BANNER_ID=ca-app-pub-3940256099942544/6300978111
+SPORTSMANIA_ADMOB_INTERSTITIAL_ID=ca-app-pub-3940256099942544/1033173712
+SPORTSMANIA_ONESIGNAL_APP_ID=
+SPORTSMANIA_ONESIGNAL_GOOGLE_PROJECT_NUMBER=REMOTE
