@@ -69,3 +69,8 @@ node_modules/
 
 # Build outputs
 dist/
+
+# ===== SENSITIVE FILES - DO NOT COMMIT =====
+google-services.json
+GoogleService-Info.plist
+dazl.config.json
