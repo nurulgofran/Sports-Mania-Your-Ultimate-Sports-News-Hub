@@ -74,3 +74,6 @@ dist/
 google-services.json
 GoogleService-Info.plist
 dazl.config.json
+
+# Antigravity/Copilot local config - do not push to GitHub
+.github/
